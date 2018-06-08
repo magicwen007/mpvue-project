@@ -1,23 +1,20 @@
 module.exports = [
   {
-    path: '/pages/index/index', // 页面路径，同时是 vue 文件相对于 src 的路径
+    path: '/pages/index', // 页面路径，同时是 vue 文件相对于 src 的路径
     config: { // 页面配置，即 page.json 的内容
-      navigationBarTitleText: '首页',
-      enablePullDownRefresh: true,
+      navigationBarTitleText: '导航列表',
     },
   },
   {
-    path: '/pages/counter/index',
+    path: '/pages/circle-life',
     config: {
-      navigationBarTitleText: '查看启动日志',
-      enablePullDownRefresh: true,
+      navigationBarTitleText: '生命周期',
     },
   },
   {
-    path: '/pages/logs/index',
+    path: '/pages/format',
     config: {
-      navigationBarTitleText: '查看启动日志',
-      enablePullDownRefresh: true,
+      navigationBarTitleText: '数据格式转换',
     },
   },
 ];
