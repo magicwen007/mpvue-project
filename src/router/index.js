@@ -17,4 +17,16 @@ module.exports = [
       navigationBarTitleText: '数据格式转换',
     },
   },
+  {
+    path: '/pages/style',
+    config: {
+      navigationBarTitleText: '样式绑定',
+    },
+  },
+  {
+    path: '/pages/event',
+    config: {
+      navigationBarTitleText: '事件绑定',
+    },
+  },
 ];
