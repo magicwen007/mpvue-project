@@ -1,8 +1,6 @@
 <template>
   <div>
-    <p class="card">
-      <slot></slot>
-    </p>
+    {{content}}
   </div>
 </template>
 
@@ -10,15 +8,16 @@
   export default {
     data() {
       return {
+        slotContent: this.content,
       };
     },
-    methods: {
+    mounted() {
+      console.log(this.slotContent);
     },
+    methods: {},
+    props: ['content'],
   };
 </script>
 
 <style>
-  .card {
-    padding: 10px;
-  }
 </style>

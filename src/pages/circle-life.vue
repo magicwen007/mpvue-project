@@ -12,51 +12,65 @@
         4.切出当前路由onUnload会执行，切进当前路由beforeUpdate,mounted,onLoad,onShow都会执行
       </p>
     </div>
+  <div>
+    <p>
+      缓存数据：<input type="text" v-model="unchangedValue">
+    </p>
+    <p>
+      未缓存数据：<input type="text" v-model="changedValue">
+    </p>
+  </div>
   </div>
 </template>
 <script>
   export default {
     data() {
+      return {
+        changedValue: null,
+        unchangedValue: null,
+      };
     },
     methods: {},
     beforeCreate() {
-      console.log('vue--beforeCreate执行');
+      console.log('vue--beforeCreate执行', this);
     },
     created() {
-      console.log('vue--created执行');
+      this.unchangedValue = null;
+      console.log('vue--created执行', this);
     },
     beforeMount() {
-      console.log('vue--beforeMount执行');
+      console.log('vue--beforeMount执行', this);
     },
     mounted() {
-      console.log('vue--mounted执行');
+      console.log('vue--mounted执行', this);
     },
     beforeUpdate() {
-      console.log('vue--beforeUpdate执行');
+      console.log('vue--beforeUpdate执行', this);
     },
     updated() {
-      console.log('vue--updated执行');
+      console.log('vue--updated执行', this);
     },
     beforeDestroy() {
-      console.log('vue--beforeDestroy执行');
+      console.log('vue--beforeDestroy执行', this);
     },
     destroyed() {
-      console.log('vue--destroyed执行');
+      console.log('vue--destroyed执行', this);
     },
     onLoad() {
-      console.log('mini--onLoad执行');
+      this.changedValue = null;
+      console.log('mini--onLoad执行', this);
     },
     onShow() {
-      console.log('mini--onShow执行');
+      console.log('mini--onShow执行', this);
     },
     onReady() {
-      console.log('mini--onReady执行');
+      console.log('mini--onReady执行', this);
     },
     onHide() {
-      console.log('mini--onHide执行');
+      console.log('mini--onHide执行', this);
     },
     onUnload() {
-      console.log('mini--onUnload执行');
+      console.log('mini--onUnload执行', this);
     },
   };
 </script>

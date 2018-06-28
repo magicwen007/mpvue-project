@@ -69,6 +69,11 @@
           @click.stop="catchHandle(2)">
           阻止冒泡
         </button>
+        <button
+          @click.stop="catchHandle(2)"
+          @click="catchHandle(1)">
+          同时绑定
+        </button>
       </div>
     </div>
   </div>
@@ -106,7 +111,7 @@
           console.log('触摸取消');
         }
       },
-      catchHandle(type, e) {
+      catchHandle(type) {
         if (type === 0) {
           console.log('父元素触发');
         } else if (type === 1) {
