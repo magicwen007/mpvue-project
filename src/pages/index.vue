@@ -16,6 +16,9 @@
       <a href="/pages/network">网络请求</a>
     </li>
     <li>
+      <a href="/pages/vuex">数据管理</a>
+    </li>
+    <li>
       <a href="/pages/format">数据格式转换</a>
     </li>
     <li>

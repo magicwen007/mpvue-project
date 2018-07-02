@@ -1,5 +1,6 @@
 <script>
   export default {
+    mpType: 'app',
     beforeCreate() {
       console.log('app--vue--beforeCreate执行');
     },

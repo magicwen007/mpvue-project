@@ -36,6 +36,12 @@ module.exports = [
     },
   },
   {
+    path: '/pages/vuex',
+    config: {
+      navigationBarTitleText: '数据管理',
+    },
+  },
+  {
     path: '/pages/format',
     config: {
       navigationBarTitleText: '数据格式转换',
