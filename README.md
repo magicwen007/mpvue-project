@@ -1,21 +1,40 @@
 # mpvue-project
 
-> A Mpvue project
+## 简介
 
-## Build Setup
+> 这是一个mpvue的实例工程
 
-``` bash
-# install dependencies
-npm install
+## 安装与运行
 
-# serve with hot reload at localhost:8080
-npm run dev
+* 下载工程
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+    git clone https://github.com/magicwen007/mpvue-project.git
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+* 安装依赖库
+
+
+    npm install
+
+
+* 运行实例
+
+
+    npm run dev
+
+
+* [微信开发者工具配置](http://mpvue.com/mpvue/quickstart/#3-mpvue)
+
+## 快速使用
+
+* 生命周期
+* 事件绑定
+* 组件引用
+* 路由信息
+* 网络请求
+* 数据管理
+* 其他
+
+## 参考文档
+[mpvue详细文档](mpvue.com/mpvue)
